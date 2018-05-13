@@ -3,7 +3,24 @@ guid: 568060995820e4f1b84394c2d1d528ac
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - MapFile: {fileID: 4900000, guid: e32a9e13a9ad7440fb74d125faeb340d, type: 3}
+  - Linear: {fileID: 4550493501868008, guid: 7ebd0dbd6d1384c6687eb623701264c1, type: 2}
+  - LinearStop: {fileID: 4098497293897742, guid: 0530ef27884cf48baa46408c248b533d,
+      type: 2}
+  - LinearStopLeft: {fileID: 4853763699871974, guid: ddc1431937d9a4cf192450333a0d2971,
+      type: 2}
+  - LinearStopBoth: {fileID: 4554037506694958, guid: 1e371ad7bb71249759f39b1fffd74e79,
+      type: 2}
+  - DiagonalLeft: {fileID: 4071663997380598, guid: 25519c8f6fe27437ba57de4fc8b07657,
+      type: 2}
+  - DiagonalRight: {fileID: 4667604403168416, guid: 7467ab0bb8775422181cd30ba9446975,
+      type: 2}
+  - ThreeWayLeft: {fileID: 4003599302840836, guid: 1161b8d66014843afb36bd92bc437c30,
+      type: 2}
+  - Asphalt: {fileID: 4597583622069168, guid: a4af229f4e6034160a5a4c54da8064c8, type: 2}
+  - Floor: {fileID: 4567420175643938, guid: 753d0a227a8f540c79771d967ec12d68, type: 2}
+  - Grass: {fileID: 4385456991337662, guid: f926385675def4336ac66b9fd3c013a8, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
