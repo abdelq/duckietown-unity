@@ -1,1 +1,6 @@
-﻿public class DuckieAcademy : Academy { }
+﻿using UnityEngine;
+
+public class DuckieAcademy : Academy {
+    public override void InitializeAcademy () {
+    }
+}

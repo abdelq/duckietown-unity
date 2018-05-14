@@ -20,7 +20,7 @@ public class MapLoader : MonoBehaviour {
     public Transform Grass;
 
     void Awake () {
-        var path = $"{Application.dataPath}/Maps/{MapFile.name}.yaml";
+        var path = $"{Application.dataPath}/Maps/udem1.yaml";
         var deserializer = new DeserializerBuilder()
             .WithNamingConvention(new UnderscoredNamingConvention())
             .Build();
