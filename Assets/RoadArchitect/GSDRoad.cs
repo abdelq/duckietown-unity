@@ -136,7 +136,7 @@ public class GSDRoad : MonoBehaviour{
 //		if(Application.isEditor && !UnityEditor.EditorApplication.isPlaying){
 			Editor_bIsConstructing = false;
 			UnityEditor.EditorApplication.update += delegate { EditorUpdate(); };
-			UnityEditor.EditorApplication.hierarchyWindowChanged += delegate { hWindowChanged(); };
+			UnityEditor.EditorApplication.hierarchyChanged += delegate { hWindowChanged(); };
 //		}
 		if(GSDSpline == null || GSDSpline.mNodes == null){
 			MostRecentNodeCount = 0;
@@ -349,7 +349,7 @@ public class GSDRoad : MonoBehaviour{
 
 	private void hWindowChanged(){
 		if(!Application.isEditor){
-			UnityEditor.EditorApplication.hierarchyWindowChanged -= delegate { hWindowChanged(); };
+			UnityEditor.EditorApplication.hierarchyChanged -= delegate { hWindowChanged(); };
 		}
 		if(Application.isPlaying || !Application.isEditor){ return; }
 		if(Application.isEditor && UnityEditor.EditorApplication.isPlaying){ return; }
