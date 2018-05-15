@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: GSDTrafficLightMain
   m_Shader: {fileID: 13, guid: 0000000000000000f000000000000000, type: 0}
@@ -94,6 +94,7 @@ Material:
     - _BumpAmt: 10
     - _DecalColoring: 0.5
     - _EdgeLength: 10
+    - _Emission: 1
     - _EmissionLM: 0
     - _FrezFalloff: 4
     - _FrezPow: 0
