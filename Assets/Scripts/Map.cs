@@ -1,14 +1,12 @@
-﻿using YamlDotNet.Serialization;
-
-public class Map {
-    public string[][] Tiles { get; set; }
-    public MapObject[] Objects { get; set; }
+﻿class Map {
+    public string[][] tiles { get; set; }
+    public MapObject[] objects { get; set; }
 
     public class MapObject {
-        public string MeshFile { get; set; }
-        [YamlMember(Alias = "pos")]
-        public float[] Position { get; set; }
-        public float Height { get; set; }
-        public int Rotate { get; set; }
+        public string kind { get; set; }
+        public float[] pos { get; set; }
+        public int rotate { get; set; }
+        public float height { get; set; }
+        public bool optional { get; set; }
     }
 }
