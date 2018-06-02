@@ -16,6 +16,7 @@ class DuckieAcademy : Academy {
                          .Instantiate(map.objects);
 
         // TODO Good main camera position of the map
+        // TODO Good light
         //Monitor.Log(key, value, displayType, target);
         //https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Feature-Monitor.md
         // TODO Put duckiebot(s) in drivable tiles randomly
