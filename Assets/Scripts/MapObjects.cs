@@ -8,8 +8,11 @@ class MapObjects : MonoBehaviour {
             GameObject original;
             switch (obj.kind)
             {
+                //barrier
+                //cone
+                //building
                 case "bus":        original = buses.PickRandom();   break;
-                //case "duckie":     original = duckies.PickRandom(); break;
+                case "duckie":     original = duckies.PickRandom(); break;
                 case "house":      original = houses.PickRandom();  break;
                 case "sign_blank": original = signs.PickRandom();   break;
                 case "tree":       original = trees.PickRandom();   break;

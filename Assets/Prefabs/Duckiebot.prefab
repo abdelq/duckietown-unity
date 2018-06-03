@@ -106,7 +106,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4454135694298672}
   - component: {fileID: 54758416588104124}
-  - component: {fileID: 114996470254972980}
   - component: {fileID: 114687831106158814}
   m_Layer: 0
   m_Name: Duckiebot
@@ -214,8 +213,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502251107313610}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.25, y: 0.1, z: 1.25}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4, y: 0.1, z: 3.5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4354559153236288}
@@ -225,7 +224,7 @@ Transform:
   - {fileID: 4970554752710298}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4577438553944692
 Transform:
   m_ObjectHideFlags: 1
@@ -652,24 +651,6 @@ MonoBehaviour:
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
   maxMotorTorque: 300
-  maxSteeringAngle: 30
---- !u!114 &114996470254972980
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1502251107313610}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e27b8bb839ca4880bc68262ca157661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axleInfos:
-  - leftWheel: {fileID: 146010555469823390}
-    rightWheel: {fileID: 146341949061658842}
-    motor: 1
-    steering: 1
-  maxMotorTorque: 400
   maxSteeringAngle: 30
 --- !u!146 &146010555469823390
 WheelCollider:

@@ -88,9 +88,9 @@ public class DuckieAgent : Agent {
 		colliders[1].steerAngle = steering;
 
 		// FIXME Visuals for wheels (rotation for movement and steering angles)
-		Vector3 position;
-		Quaternion rotation;
-		colliders[0].GetWorldPose(out position, out rotation); // XXX
+		//Vector3 position;
+		//Quaternion rotation;
+		//colliders[0].GetWorldPose(out position, out rotation); // XXX
 		//colliders[0].transform.GetChild(0).transform.position = position;
 		//colliders[0].transform.GetChild(0).transform.rotation = rotation;
 		//Debug.Log(position);
@@ -98,7 +98,7 @@ public class DuckieAgent : Agent {
 		//colliders[0].GetComponentInParent<MeshFilter>().transform.rotation = rotation;
 		//colliders[0].GetComponentInParent<MeshFilter>().transform.position = position;
 		//colliders[0].GetComponentInParent<MeshFilter>().transform.rotation = rotation;
-		colliders[1].GetWorldPose(out position, out rotation); // XXX
+		//colliders[1].GetWorldPose(out position, out rotation); // XXX
 		//colliders[1].transform.GetChild(0).transform.rotation = rotation;
 		//colliders[1].GetComponentInParent<MeshFilter>().transform.rotation = rotation;
 		/*colliders[1].GetComponentInParent<MeshFilter>().transform.position = position;
