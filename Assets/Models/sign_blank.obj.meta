@@ -12,6 +12,9 @@ ModelImporter:
     400004: Cube4_default2
     400006: //RootNode
     2100000: default2
+    2100002: Cube2_default2Mat
+    2100004: Cube3_default2Mat
+    2100006: Cube4_default2Mat
     2300000: Cube2_default2
     2300002: Cube3_default2
     2300004: Cube4_default2
