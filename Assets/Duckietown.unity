@@ -634,7 +634,7 @@ MonoBehaviour:
   buses:
   - {fileID: 100000, guid: a0d874efd60454528ac2bc23ba82fbb6, type: 3}
   duckies:
-  - {fileID: 1502251107313610, guid: 306732f54330c45b8a17a73a10005811, type: 2}
+  - {fileID: 1167287505960116, guid: ff0ef36435ef740f0befc084b31d950f, type: 2}
   houses:
   - {fileID: 100002, guid: 912e10a65289d4ae492b5904553891d6, type: 3}
   signs:
@@ -687,20 +687,10 @@ Prefab:
       propertyPath: brain
       value: 
       objectReference: {fileID: 712064476}
-    - target: {fileID: 114687831106158814, guid: 306732f54330c45b8a17a73a10005811,
-        type: 2}
-      propertyPath: maxSteeringAngle
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 114687831106158814, guid: 306732f54330c45b8a17a73a10005811,
-        type: 2}
-      propertyPath: maxMotorTorque
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 54758416588104124, guid: 306732f54330c45b8a17a73a10005811,
         type: 2}
-      propertyPath: m_Mass
-      value: 800
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 306732f54330c45b8a17a73a10005811, type: 2}

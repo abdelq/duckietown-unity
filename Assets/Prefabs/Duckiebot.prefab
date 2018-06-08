@@ -81,6 +81,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1244222337527750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4403375913683768}
+  - component: {fileID: 33735524225627512}
+  - component: {fileID: 23488601982028200}
+  - component: {fileID: 65216698119348582}
+  m_Layer: 0
+  m_Name: Duckie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1448996657486660
 GameObject:
   m_ObjectHideFlags: 1
@@ -207,6 +225,19 @@ Transform:
   m_Father: {fileID: 4454135694298672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
+--- !u!4 &4403375913683768
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244222337527750}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.0425, z: -0.075}
+  m_LocalScale: {x: 0.0003, y: 0.0003, z: 0.0003}
+  m_Children: []
+  m_Father: {fileID: 4454135694298672}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!4 &4454135694298672
 Transform:
   m_ObjectHideFlags: 1
@@ -222,6 +253,7 @@ Transform:
   - {fileID: 4577438553944692}
   - {fileID: 4950197808767534}
   - {fileID: 4970554752710298}
+  - {fileID: 4403375913683768}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -437,6 +469,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23488601982028200
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244222337527750}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: bef93b580065b44d0bdec36c838e8371, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23672171545776926
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -528,6 +595,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006341696557238}
   m_Mesh: {fileID: 4300000, guid: e20861528bb354c5a8ca307c0bf4d906, type: 3}
+--- !u!33 &33735524225627512
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244222337527750}
+  m_Mesh: {fileID: 4300000, guid: 6e406c6046c0a42689055c07199accc4, type: 3}
 --- !u!33 &33818972760882756
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -549,7 +623,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502251107313610}
   serializedVersion: 2
-  m_Mass: 500
+  m_Mass: 800
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -583,6 +657,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.014425874, y: 0.11947696, z: 0.07977854}
   m_Center: {x: 0.09993988, y: -0.00047323108, z: 0.005810678}
+--- !u!65 &65216698119348582
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244222337527750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 165.47844, y: 154.04062, z: 115.25343}
+  m_Center: {x: -13.440703, y: 86.94968, z: -3.701501}
 --- !u!65 &65402731221599976
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -650,8 +736,8 @@ MonoBehaviour:
     resetOnDone: 1
     onDemandDecision: 0
     numberOfActionsBetweenDecisions: 1
-  maxMotorTorque: 300
-  maxSteeringAngle: 30
+  maxMotorTorque: 100
+  maxSteeringAngle: 45
 --- !u!146 &146010555469823390
 WheelCollider:
   m_ObjectHideFlags: 1
