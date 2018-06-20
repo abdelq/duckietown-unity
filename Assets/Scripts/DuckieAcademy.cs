@@ -1,25 +1,34 @@
-﻿using UnityEngine;
+﻿using MLAgents;
+using UnityEngine;
 using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.NamingConventions;
 
 class DuckieAcademy : Academy {
     private Map map;
     public TextAsset mapAsset;
+    public bool randomize;
 
     public override void InitializeAcademy () {
-        map = new Deserializer().Deserialize<Map>(mapAsset.text);
+        var deserializer = new DeserializerBuilder()
+            .WithNamingConvention(new UnderscoredNamingConvention())
+            .Build();
+        map = deserializer.Deserialize<Map>(mapAsset.text);
 
         var mapObject = GameObject.Find("Map");
         mapObject.GetComponentInChildren<MapTiles>()
-                 .Instantiate(map.tiles);
+                 .Instantiate(map.tiles, randomize);
         if (map.objects != null)
             mapObject.GetComponentInChildren<MapObjects>()
-                     .Instantiate(map.objects);
+                     .Instantiate(map.objects, randomize);
+        mapObject.GetComponentInChildren<MapRobots>()
+                 .Instantiate(map, randomize);
 
-        var cameraObject = GameObject.FindWithTag("MainCamera");
-        cameraObject.transform.position = new Vector3(
-            (float)map.tiles[0].Length/2, (float)map.tiles.Length/2, .5f);
+        // TODO Traffic Lights
+        // TODO Intersection Signs
 
-        var duckieObject = GameObject.FindWithTag("Duckiebot");
-        // TODO Randomly place duckiebot in a drivable tile y=0.1
+        GameObject.FindWithTag("MainCamera").transform.position = new Vector3(
+            (float)map.sizeX()/2, (float)map.sizeY()/2, 0); // XXX
+        GameObject.FindWithTag("MainLight").transform.position = new Vector3(
+            (float)map.sizeX()/2, 1, (float)map.sizeY()/2);
     }
 }
