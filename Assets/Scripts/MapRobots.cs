@@ -7,6 +7,15 @@ public class MapRobots : MonoBehaviour {
     public void Instantiate(Map map, bool randomize) {
         prefab.GetComponentInChildren<DuckieAgent>()
             .GiveBrain(GameObject.FindObjectOfType<Brain>());
+        
+        if (randomize) {
+            var collider = prefab.GetComponentsInChildren<WheelCollider>()
+                                 .PickRandom();
+            if (Random.Range(0, 2) == 0)
+                collider.radius += .005f;
+            else
+                collider.radius -= .005f;
+        }
 
         if (randomize) {
             do {
