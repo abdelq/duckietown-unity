@@ -22,8 +22,9 @@ class DuckieAcademy : Academy {
                      .Instantiate(map.objects, randomize);
         mapObject.GetComponentInChildren<MapRobots>()
                  .Instantiate(map, randomize);
+        mapObject.GetComponentInChildren<MapLights>()
+                 .Instantiate(map.tiles, randomize);
 
-        // TODO Traffic Lights
         // TODO Intersection Signs
 
         GameObject.FindWithTag("MainCamera").transform.position = new Vector3(
