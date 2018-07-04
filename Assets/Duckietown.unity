@@ -287,7 +287,7 @@ MonoBehaviour:
     targetFrameRate: 60
   resetParameters:
     resetParameters: []
-  mapAsset: {fileID: 4900000, guid: 5d30a44418fa9412bbf670bc63903c76, type: 3}
+  mapAsset: {fileID: 4900000, guid: e32a9e13a9ad7440fb74d125faeb340d, type: 3}
   randomize: 0
 --- !u!4 &299646156
 Transform:
